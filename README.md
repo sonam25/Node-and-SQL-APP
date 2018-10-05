@@ -15,8 +15,8 @@ git clone (https://github.com/sonam25/Node-and-SQL-APP.git)
 cd Node-and-SQL-APP
 npm install
 node bamazonCustomer.js
-The table with all the items present for sell is displayed.```
-
+The table with all the items present for sell is displayed.
+```
 * Followed my a question asking the customer the item id of the product they want to purchase.
 
 * After entering the item id the customer is asked for the no of quantity of item the customer want to purchase.
