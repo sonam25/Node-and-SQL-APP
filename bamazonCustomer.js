@@ -45,18 +45,14 @@ var buy = function(res){
 			name:"stockquantity",
 			type:"input",
 			message:"Enter the quantity for the product of purchase?",
-		 	//  validate:function(value) {
-			//  	if(isNAN(value) === false){
-		 	// 		return true;
-		 	// }
-		 	//  	return false;
-		 	// }
+		
 		}
 	])
 	.then(function(answer){
 		
 		for(var i = 0; i < res.length; i++){
 			if(res[i].item_id == answer.item_id){
+				  var price = res[i].price;
 				if((res[i].stock_quantity - answer.stockquantity) > 0){
 					connection.query(
 						"UPDATE products SET ? WHERE ?",
@@ -70,7 +66,10 @@ var buy = function(res){
 						],
 						function(err,res2) {
 						  if (err) throw err;
-						  console.log("Purchase successfully!");
+							console.log("Purchase successfully!");
+							console.log("Total Cost is " + price *answer.stockquantity);
+							console.log("--------------------------------------------------------");
+							console.log("--------------------------------------------------------");
 						  start();
 						}
 					  );
