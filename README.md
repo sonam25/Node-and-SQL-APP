@@ -1,9 +1,9 @@
 # Node-and-SQL-APP
 
 ##Description
-This application implements a simple command line based storefront using the npm inquirer package and the MySQL database backend together with the npm mysql package. The application presents two interfaces: customer.
+This application implements a simple command line based storefront using the npm (inquirer) package and the MySQL database backend together with the npm (mysql) package. The application presents two interfaces: customer.
 
-MySQL Database Setup
+##MySQL Database Setup
 In order to run this application, you should have the MySQL database already set up on your machine. If you don't, visit the MySQL installation page to install the version you need for your operating system. Once you have MySQL isntalled, you will be able to create the Bamazon database and the products table with the SQL code found in bamazon.sql. Run this code inside your MySQL client like MySQL workbench to populate the database, then you will be ready to proceed with running the Bamazon customer interfaces.
 
 ##Customer Interface
@@ -17,12 +17,12 @@ npm install
 node bamazonCustomer.js
 The table with all the items present for sell is displayed.
 
-Followed my a question asking the customer the item id of the product they want to purchase.
+* Followed my a question asking the customer the item id of the product they want to purchase.
 
-After entering the item id the customer is asked for the no of quantity of item the customer want to purchase.
+* After entering the item id the customer is asked for the no of quantity of item the customer want to purchase.
 
-Validation is done to check if enough stock is available of the item the customer is requested and a Successfull Purchase or Insufficient Quantity message is displayed.
+* Validation is done to check if enough stock is available of the item the customer is requested and a Successfull Purchase or Insufficient Quantity message is displayed.
 
-If the purchase is successfull the final price of the purchase is diplayed
+* If the purchase is successfull the final price of the purchase is diplayed
 
 
